@@ -80,7 +80,7 @@ tree_total_uhf42 =
 
 health_state = c("Birch", "Ash", "Oak", "Other", "Total")
 
-mydat2 = rgdal::readOGR(dsn ="./UHF42", layer = "UHF_42_DOHMH"")
+mydat2 = rgdal::readOGR(dsn ="./UHF42", layer = "UHF_42_DOHMH")
 
 names(mydat2)
 mydat2$UHFCODE
