@@ -80,7 +80,7 @@ tree_total_uhf42 =
 
 health_state = c("Birch", "Ash", "Oak", "Other", "Total")
 
-mydat2 = rgdal::readOGR("./UHF42/UHF_42_DOHMH.shp")
+mydat2 = rgdal::readOGR(dsn ="./UHF42", layer = "UHF_42_DOHMH"")
 
 names(mydat2)
 mydat2$UHFCODE
@@ -227,7 +227,6 @@ bfigure =  ggplot(final_asthma_df) +
 ggplotly(bfigure)
 
 })
-
 
 
 ```
