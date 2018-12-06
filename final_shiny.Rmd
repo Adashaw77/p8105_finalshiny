@@ -18,6 +18,7 @@ library(shiny)
 library(rgdal)
 library(leaflet)
 library(raster)
+library(rsconnect)
 
 mydat = rgdal::readOGR(dsn ="./UHF42", layer = "UHF_42_DOHMH")
 
